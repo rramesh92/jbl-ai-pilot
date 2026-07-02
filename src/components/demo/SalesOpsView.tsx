@@ -249,7 +249,7 @@ export function SalesOpsView() {
                               </td>
                             </tr>
                           )}
-                        </>
+                        </Fragment>
                       ))}
                     </tbody>
                   </table>
