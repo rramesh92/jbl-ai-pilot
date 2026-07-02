@@ -3,9 +3,30 @@ import { QUIZ_QUESTIONS, CRM_MATCHES } from "@/lib/mockData";
 
 export type Role = "student" | "instructor" | "admin" | "sales";
 
-export type QuizQ = (typeof QUIZ_QUESTIONS)[number] & { status: string };
-export type Match = (typeof CRM_MATCHES)[number] & { status: string; confirmedAt?: string; confirmedBy?: string };
-export type AuditEntry = { id: string; text: string; time: string };
+export type QuizQ = {
+  id: string;
+  question: string;
+  options: string[];
+  correct: number;
+  paragraph: string;
+  status: string;
+  originalQuestion?: string;
+  originalOptions?: string[];
+  editNote?: string;
+};
+export type Match = {
+  id: string;
+  institution: string;
+  crmId: string;
+  jblId: string;
+  jblIdAlt?: string;
+  confidence: number;
+  evidence: { emailDomain: boolean; billingAddress: boolean; orderOverlap: boolean };
+  status: string;
+  conflictNote?: string;
+  confirmedAt?: string;
+  confirmedBy?: string;
+};
 
 interface DemoState {
   role: Role;
