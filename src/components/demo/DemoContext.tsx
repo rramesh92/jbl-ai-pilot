@@ -27,6 +27,7 @@ export type Match = {
   confirmedAt?: string;
   confirmedBy?: string;
 };
+export type AuditEntry = { id: string; text: string; time: string };
 
 interface DemoState {
   role: Role;
