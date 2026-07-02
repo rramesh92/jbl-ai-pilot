@@ -172,9 +172,8 @@ export function SalesOpsView() {
                     </thead>
                     <tbody>
                       {pending.map((m) => (
-                        <>
+                        <Fragment key={m.id}>
                           <tr
-                            key={m.id}
                             onClick={() =>
                               setExpanded((e) => (e === m.id ? null : m.id))
                             }
