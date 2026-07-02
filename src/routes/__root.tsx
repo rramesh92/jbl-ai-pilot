@@ -82,10 +82,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Clickable prototype of JBL's StudyBot and CRM ↔ Catalogue Match Assistant for internal stakeholder review." },
       { name: "author", content: "Jones & Bartlett Learning" },
       { property: "og:title", content: "JBL AI — Stakeholder Prototype" },
-      { property: "og:description", content: "Clickable prototype of JBL's StudyBot and CRM ↔ Catalogue Match Assistant." },
+      { property: "og:description", content: "Clickable prototype of JBL's StudyBot and CRM ↔ Catalogue Match Assistant for internal stakeholder review." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "JBL AI — Stakeholder Prototype" },
+      { name: "twitter:description", content: "Clickable prototype of JBL's StudyBot and CRM ↔ Catalogue Match Assistant for internal stakeholder review." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/2aac3a2c-173f-484c-bc33-2ee451965636/id-preview-2a2632f8--08d1da25-f815-49a0-b13e-1066bf7bb03c.lovable.app-1782977106935.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/2aac3a2c-173f-484c-bc33-2ee451965636/id-preview-2a2632f8--08d1da25-f815-49a0-b13e-1066bf7bb03c.lovable.app-1782977106935.png" },
     ],
     links: [
       {
